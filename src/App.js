@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios'
 import APODImage from './components/APODImage'
+import Footer from './components/Footer'
 import "./App.css";
 
 const userAPIKey = 'QfI7Bijw7eKPRWJrrF8l6BArJjKy5DlDNQpkZDFz'
@@ -44,7 +45,9 @@ function App() {
       </section>
 
       <footer>
-        {/* copyright & date */}
+        {
+          nasaData && <Footer copyright={nasaData.copyright} date={nasaData.date} hdUrl={nasaData.hdurl}/>
+        }
       </footer>
     
     </div>
