@@ -47,3 +47,6 @@
 .footer-info {
 	font-family: calibri;
 }
+img {
+	max-width: 1000px;
+}
