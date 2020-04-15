@@ -12,31 +12,6 @@ const userAPIKey = 'QfI7Bijw7eKPRWJrrF8l6BArJjKy5DlDNQpkZDFz'
 const apodUrl = 'https://api.nasa.gov/planetary/apod'
 
 
-const DateSelect = ({ date }) => {
-  const [desiredDate, setDesiredDate] = useState(null)
-
-  useEffect(() => {
-    console.log('this runs when we change the date')
-    axios.get(`${apodUrl}?api_key=${userAPIKey}`)
-      .then(res => {
-        setDesiredDate(res.data)
-      })
-      .catch(err => {
-        console.log('error')
-      })
-  }, [date]
-  )
-  if (!date) {
-    return null
-  }
-  return (
-    <div>
-      <input type="date" value='2019-06-06' />
-    </div>
-  )
-}
-
-
 const App = () => {
   const [nasaData, setNasaData] = useState(null)
   const [currentDate, setCurrentDate] = useState(`2020-04-15`)
@@ -46,8 +21,8 @@ const App = () => {
     
     axios.get(`${apodUrl}?api_key=${userAPIKey}&date=${currentDate}`)
       .then(response => {
-        console.log('working')
-        console.log(response.data)
+        // console.log('working')
+        // console.log(response.data)
         setNasaData(response.data)
       })
       .catch(err => {
@@ -70,12 +45,12 @@ const App = () => {
     <div className="App">
       <div>
       <form action="/action_page.php">
-        Date: <input type="date" onInput={(e) => {
-        e.persist()
-        console.log(e)
-          e.preventDefault()
-         return setCurrentDate(`${e.target.value}`)
-      }}/>
+          Date: <input type="date" onInput={(e) => {
+          // e.persist()
+          // console.log(e)
+            // e.preventDefault()
+          return setCurrentDate(`${e.target.value}`)
+          }}/>
       </form>
       </div>
           <header>
