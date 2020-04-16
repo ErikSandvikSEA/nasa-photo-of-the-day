@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const HeaderWrapper = styled.div`
   border: 1px solid rgb(210, 210, 210);
-  box-shadow: 0px 1px 6px -2px rgb(128, 127, 127);
+  box-shadow: 5px 5px 5px -2px rgb(188, 127, 127);
  
   margin: 8px;
   padding: 12px 30px;

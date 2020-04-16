@@ -74,7 +74,7 @@ const App = () => {
               nasaData && <APODImage imageUrl={nasaData.url} />
             }
             </APODImageWrapper>
-            <FooterSpan backgroundColor='#AFEEFE'>
+            <FooterSpan backgroundColor='#00b3b3'>
             {
               nasaData && <Explanation imageExplanation={nasaData.explanation}/>
             }
