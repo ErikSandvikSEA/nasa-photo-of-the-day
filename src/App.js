@@ -13,8 +13,8 @@ const apodUrl = 'https://api.nasa.gov/planetary/apod'
 
 
 const App = () => {
-  const [nasaData, setNasaData] = useState(null)
-  const [currentDate, setCurrentDate] = useState(`2020-04-15`)
+  const [nasaData, setNasaData] = useState(null) // (nasaData)
+  const [currentDate, setCurrentDate] = useState(`1995-06-16`) 
 
 
   useEffect(() => {
@@ -36,9 +36,11 @@ const App = () => {
   //   console.log(e)
   //   e.preventDefault()
   // }
-  const mapHandler = (event) => {
-    alert(event.target.dataset.name);
-  };
+  // const mapHandler = (event) => {
+  //   event.persist()
+  //   console.log(event)
+  //   // alert(event.target.dataset.name);
+  // };
 
 
   return (
@@ -49,7 +51,7 @@ const App = () => {
           // e.persist()
           // console.log(e)
             // e.preventDefault()
-          return setCurrentDate(`${e.target.value}`)
+          return setCurrentDate(`${e.target.value}`) //2020-04-15
           }}/>
       </form>
       </div>
