@@ -84,7 +84,7 @@ const App = () => {
           <footer>
             <FooterSpan backgroundColor='#AFEEEE'>
             {
-              nasaData && <Footer copyright={nasaData.copyright} date={nasaData.date} hdUrl={nasaData.hdurl} />
+              nasaData && <Footer danger copyright={nasaData.copyright} date={nasaData.date} hdUrl={nasaData.hdurl} />
             }
             </FooterSpan>
           </footer>
