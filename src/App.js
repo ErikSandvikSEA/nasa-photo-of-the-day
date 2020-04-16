@@ -4,6 +4,9 @@ import Header from './components/Header'
 import APODImage from './components/APODImage'
 import Explanation from './components/Explanation'
 import Footer from './components/Footer'
+import styled from 'styled-components'
+import Container from './components/Container'
+import Form from './components/Form'
 import USAMap from "react-usa-map";
 
 import "./App.css";
@@ -44,17 +47,15 @@ const App = () => {
 
 
   return (
-    <div className="App">
-      <div>
-      <form action="/action_page.php">
+    <Container className="App">
+     <Form>
           Date: <input type="date" onInput={(e) => {
           // e.persist()
           // console.log(e)
             // e.preventDefault()
           return setCurrentDate(`${e.target.value}`) //2020-04-15
           }}/>
-      </form>
-      </div>
+      </Form>
           <header>
             {/* header info */}
             {
@@ -81,7 +82,7 @@ const App = () => {
            />
           </div> */}
 
-    </div >
+    </Container >
   );
 }
 
