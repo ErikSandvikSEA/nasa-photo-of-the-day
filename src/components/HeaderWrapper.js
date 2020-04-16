@@ -1,13 +1,14 @@
 import styled from 'styled-components'
 
-const Form = styled.div`
+const HeaderWrapper = styled.div`
   border: 1px solid rgb(210, 210, 210);
   box-shadow: 0px 1px 6px -2px rgb(128, 127, 127);
  
   margin: 8px;
-  padding: 12px;
+  padding: 12px 30px;
   background-color: ${props => props.backgroundColor ? props.backgroundColor : 'inherit'};
   border-radius: ${props => props.borderRadius ? props.borderRadius : 'inherit'};
+  font-family: ${props => props.font ? props.font : 'inherit'};
 
   a {
     color: green;
@@ -20,4 +21,4 @@ const Form = styled.div`
 
 `
 
-export default Form
+export default HeaderWrapper

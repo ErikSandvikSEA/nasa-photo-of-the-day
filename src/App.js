@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios'
 import Header from './components/Header'
 import APODImage from './components/APODImage'
+import APODImageWrapper from './components/APODImageWrapper'
 import Explanation from './components/Explanation'
 import Footer from './components/Footer'
 import styled from 'styled-components'
 import Container from './components/Container'
 import Form from './components/Form'
 import USAMap from "react-usa-map";
+import HeaderWrapper from './components/HeaderWrapper'
 
 import "./App.css";
 
@@ -48,7 +50,7 @@ const App = () => {
 
   return (
     <Container className="App">
-     <Form>
+     <Form backgroundColor='turquoise' borderRadius='10px'>
           Date: <input type="date" onInput={(e) => {
           // e.persist()
           // console.log(e)
@@ -56,17 +58,21 @@ const App = () => {
           return setCurrentDate(`${e.target.value}`) //2020-04-15
           }}/>
       </Form>
+      <HeaderWrapper  font="verdana">
           <header>
             {/* header info */}
             {
               nasaData && <Header imageTitle={nasaData.title} />
             }
           </header>
+        </HeaderWrapper>
 
           <section className="body">
+            <APODImageWrapper>
             {
               nasaData && <APODImage imageUrl={nasaData.url} />
             }
+            </APODImageWrapper>
             {
               nasaData && <Explanation imageExplanation={nasaData.explanation} />
             }
