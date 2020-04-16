@@ -1,13 +1,19 @@
 import styled from 'styled-components'
 
-const Form = styled.div`
+const FooterSpan = styled.span`
+display: flex;
+flex-direction: column;
+align-items: center;
   border: 1px solid rgb(210, 210, 210);
   box-shadow: 0px 1px 6px -2px rgb(128, 127, 127);
+  max-width: 1000px;
  
   margin: 8px;
-  padding: 12px;
+  padding: 20px;
   background-color: ${props => props.backgroundColor ? props.backgroundColor : 'inherit'};
-  border-radius: ${props => props.borderRadius ? props.borderRadius : 'inherit'};
+  color: ${props => props.fontColor ? props.fontColor : 'inherit'}
+  
+
 
   a {
     color: green;
@@ -17,14 +23,7 @@ const Form = styled.div`
       transition: all 1s ease-in-out;
     }
   }
-  color: ${props => props.textColor ? props.textColor : 'inherit'};
 
-size: ${props => props.size ? props.size  + 'px' : 'inherit'};
-
-
-&:before {
-     content: '🚀';
-};
 `
 
-export default Form
+export default FooterSpan

@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import styled from 'styled-components'
 import Container from './components/Container'
 import Form from './components/Form'
+import FooterSpan from './components/FooterSpan'
 import USAMap from "react-usa-map";
 import HeaderWrapper from './components/HeaderWrapper'
 
@@ -50,7 +51,7 @@ const App = () => {
 
   return (
     <Container className="App">
-     <Form backgroundColor='turquoise' borderRadius='10px'>
+     <Form backgroundColor='turquoise' borderRadius='10px'>&nbsp;
           Date: <input type="date" onInput={(e) => {
           // e.persist()
           // console.log(e)
@@ -79,9 +80,11 @@ const App = () => {
           </section>
 
           <footer>
+            <FooterSpan backgroundColor='#AFEEEE'>
             {
               nasaData && <Footer copyright={nasaData.copyright} date={nasaData.date} hdUrl={nasaData.hdurl} />
             }
+            </FooterSpan>
           </footer>
           {/* <div>
             <USAMap onClick={mapHandler}

@@ -17,7 +17,7 @@ align-items: center;
 
     &:hover {
       color: red;
-      transition: all 1s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
   }
 
