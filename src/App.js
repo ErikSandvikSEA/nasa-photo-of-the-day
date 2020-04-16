@@ -82,7 +82,7 @@ const App = () => {
           </section>
 
           <footer>
-            <FooterSpan backgroundColor='#AFEEEE'>
+            <FooterSpan backgroundColor='#00b3b3'>
             {
               nasaData && <Footer danger copyright={nasaData.copyright} date={nasaData.date} hdUrl={nasaData.hdurl} />
             }

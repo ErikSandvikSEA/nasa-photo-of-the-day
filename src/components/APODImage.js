@@ -1,11 +1,18 @@
 import React from "react";
 import styled from 'styled-components'
 
-const APODImage = ( { imageUrl } ) => {
+
+const StyledAPODImage = styled.div`
+`
+
+
+
+
+const APODImage = ( { imageUrl, borderRadius } ) => {
      return (
-          <div className='component1'>
+          <StyledAPODImage className='component1'>
                <img src={imageUrl}/>
-          </div>  
+          </StyledAPODImage>  
      )
 }
 

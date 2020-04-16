@@ -17,7 +17,8 @@ align-items: center;
 
 
   a {
-    color: green;
+    color: white;
+    font-weight: normal;
 
     &:hover {
       color: red;

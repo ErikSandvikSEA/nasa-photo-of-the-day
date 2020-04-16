@@ -13,7 +13,7 @@ align-items: center;
   background-color: white;
 
   a {
-    color: green;
+    color: lightcoral;
 
     &:hover {
       color: red;

@@ -3,9 +3,11 @@ import styled from 'styled-components'
 
 const StyledFooter = styled.footer`
      font-family: calibri;
-     color: ${props => props.danger ? 'darkblue' : 'inherit'};
+     color: ${props => props.danger ? 'white' : 'inherit'};
      font-size: ${props => props.fontSize ? '5em' : 'inherit'};
-     font-style: italic
+
+     font-weight: bold;
+     
 `
 
 
