@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const FooterSpan = styled.span`
+const FooterSpan = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -12,7 +12,8 @@ align-items: center;
   padding: 20px;
   background-color: ${props => props.backgroundColor ? props.backgroundColor : 'inherit'};
   color: ${props => props.fontColor ? props.fontColor : 'inherit'}
-  
+  border: 1px;
+  border-radius: 10px;
 
 
   a {

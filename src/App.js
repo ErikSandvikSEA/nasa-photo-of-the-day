@@ -69,14 +69,16 @@ const App = () => {
         </HeaderWrapper>
 
           <section className="body">
-            <APODImageWrapper>
+            <APODImageWrapper borderColor='#AFEEEE'>
             {
               nasaData && <APODImage imageUrl={nasaData.url} />
             }
             </APODImageWrapper>
+            <FooterSpan backgroundColor='#AFEEFE'>
             {
-              nasaData && <Explanation imageExplanation={nasaData.explanation} />
+              nasaData && <Explanation imageExplanation={nasaData.explanation}/>
             }
+            </FooterSpan>
           </section>
 
           <footer>
