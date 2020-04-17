@@ -53,11 +53,8 @@ const App = () => {
     <Container className="App">
      <Form backgroundColor='turquoise' borderRadius='10px'>&nbsp;
           Date: <input type="date" onInput={(e) => {
-          // e.persist()
-          // console.log(e)
-            // e.preventDefault()
           return setCurrentDate(`${e.target.value}`) //2020-04-15
-          }}/>
+          }}/>                  
       </Form>
       <HeaderWrapper  font="verdana">
           <header>
